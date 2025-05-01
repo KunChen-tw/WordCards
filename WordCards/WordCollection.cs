@@ -5,8 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReadTSVFile
+namespace WordCards
 {
+    /// <summary>
+    /// WordCollection 類別代表單字的集合，繼承自 Collection<WordItem>。
+    /// </summary>
     class WordCollection : Collection<WordItem>
     {
         /// <summary>

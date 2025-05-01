@@ -72,6 +72,7 @@
             this.lstWordList.Name = "lstWordList";
             this.lstWordList.Size = new System.Drawing.Size(156, 339);
             this.lstWordList.TabIndex = 3;
+            this.lstWordList.Click += new System.EventHandler(this.lstWordList_Click);
             // 
             // palMain
             // 
@@ -181,6 +182,7 @@
             this.Name = "frmWordCards";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "單字卡";
+            this.Load += new System.EventHandler(this.frmWordCards_Load);
             this.sssWord.ResumeLayout(false);
             this.sssWord.PerformLayout();
             this.palMain.ResumeLayout(false);

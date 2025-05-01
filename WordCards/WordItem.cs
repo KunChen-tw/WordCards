@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReadTSVFile
+namespace WordCards
 {
+    /// <summary>
+    /// WordItem 類別代表一個單字項目，包含單字、音標、發音路徑和解釋。
+    /// </summary>
     class WordItem
     {
         #region 成員變數
@@ -29,6 +32,15 @@ namespace ReadTSVFile
                 SoundPath = strLists[2];
                 Explain = string.Join(Environment.NewLine, strLists.Skip(3)); 
             }
+        }
+
+        /// <summary>
+        /// 將 WordItem 物件轉換為字串，格式為 "Word"。
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"{Word}";
         }
     }
 }
