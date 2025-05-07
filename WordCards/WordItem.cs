@@ -9,7 +9,7 @@ namespace WordCards
     /// <summary>
     /// WordItem 類別代表一個單字項目，包含單字、音標、發音路徑和解釋。
     /// </summary>
-    class WordItem
+    public class WordItem
     {
         #region 成員變數
         public string Word { get; set; }
@@ -41,6 +41,12 @@ namespace WordCards
         public override string ToString()
         {
             return $"{Word}";
+        }
+
+        public string ToLineString()
+        {
+            // 將 WordItem 物件轉換為字串，格式為 "Word\tPhonogram\tSoundPath\tExplain"。
+            return $"{Word}\t{Phonogram}\t{SoundPath}\t{Explain}";
         }
     }
 }

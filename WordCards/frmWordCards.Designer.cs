@@ -75,6 +75,7 @@
             this.lstWordList.Size = new System.Drawing.Size(156, 339);
             this.lstWordList.TabIndex = 3;
             this.lstWordList.Click += new System.EventHandler(this.lstWordList_Click);
+            this.lstWordList.DoubleClick += new System.EventHandler(this.lstWordList_DoubleClick);
             // 
             // palMain
             // 
