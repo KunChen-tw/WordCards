@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWordCards));
             this.sssWord = new System.Windows.Forms.StatusStrip();
             this.tsslMessage = new System.Windows.Forms.ToolStripStatusLabel();
             this.lstWordList = new System.Windows.Forms.ListBox();
@@ -187,6 +188,7 @@
             this.Controls.Add(this.palMain);
             this.Controls.Add(this.lstWordList);
             this.Controls.Add(this.sssWord);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(620, 400);
             this.Name = "frmWordCards";

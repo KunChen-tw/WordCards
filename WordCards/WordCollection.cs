@@ -32,6 +32,10 @@ namespace WordCards
             }
         }
 
+        /// <summary>
+        /// 將 WordCollection 物件的資料儲存到檔案中
+        /// </summary>
+        /// <param name="filePath">檔案名稱</param>
 
         public void SaveToFile(string filePath)
         {
@@ -41,7 +45,7 @@ namespace WordCards
                 foreach (WordItem item in this)
                 {
                     // 將每個單字項目轉換為字串並寫入檔案
-                    writer.WriteLine(item.ToString());
+                    writer.WriteLine(item.ToLineString());
                 }
             }
         }

@@ -62,6 +62,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWord.Location = new System.Drawing.Point(6, 26);
             this.txtWord.Name = "txtWord";
+            this.txtWord.ReadOnly = true;
             this.txtWord.Size = new System.Drawing.Size(252, 29);
             this.txtWord.TabIndex = 0;
             // 

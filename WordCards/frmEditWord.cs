@@ -12,6 +12,9 @@ namespace WordCards
 {
     public partial class frmEditWord: Form
     {
+        /// <summary>
+        /// 單子成員變數
+        /// </summary>
         public WordItem Word { get; set; } = null;
 
         public frmEditWord(WordItem word)
