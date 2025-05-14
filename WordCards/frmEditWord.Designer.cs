@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditWord));
             this.grpWord = new System.Windows.Forms.GroupBox();
             this.txtWord = new System.Windows.Forms.TextBox();
             this.grpPhonogram = new System.Windows.Forms.GroupBox();
@@ -158,6 +159,7 @@
             this.Controls.Add(this.grpSoundPath);
             this.Controls.Add(this.grpPhonogram);
             this.Controls.Add(this.grpWord);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(300, 500);
             this.Name = "frmEditWord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
